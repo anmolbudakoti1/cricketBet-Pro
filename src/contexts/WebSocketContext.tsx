@@ -36,7 +36,7 @@ export function WebSocketProvider({ children }: WebSocketProviderProps) {
     if (!user) return
 
     const connectWebSocket = () => {
-      const websocket = new WebSocket('ws://localhost:5000/ws')
+      const websocket = new WebSocket('ws://cricketbet-pro.onrender.com/ws')
       
       websocket.onopen = () => {
         console.log('WebSocket connected')
