@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useWebSocket } from '../contexts/WebSocketContext'
 import { api } from '../services/api'
 import { 
   Calendar, 
   TrendingUp, 
-  Wallet, 
   Play, 
   Clock,
   Trophy,

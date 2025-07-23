@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { useWebSocket } from '../contexts/WebSocketContext'
 import { useAuth } from '../contexts/AuthContext'
@@ -123,12 +123,12 @@ export default function MatchDetail() {
     }
   }
 
-  const formatTime = (dateString: string) => {
-    return new Date(dateString).toLocaleTimeString([], { 
-      hour: '2-digit', 
-      minute: '2-digit' 
-    })
-  }
+  // const formatTime = (dateString: string) => {
+  //   return new Date(dateString).toLocaleTimeString([], { 
+  //     hour: '2-digit', 
+  //     minute: '2-digit' 
+  //   })
+  // }
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString([], {
@@ -416,7 +416,7 @@ export default function MatchDetail() {
                         >
                           <div className="flex items-center justify-between">
                             <div className="font-medium text-sm">{player}</div>
-                            <div className="text-sm font-bold text-primary-600">{odds}</div>
+                            <div className="text-sm font-bold text-primary-600">{odds as number}</div>
                           </div>
                         </button>
                       ))}

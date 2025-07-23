@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { api } from '../services/api'
 import { 
   Users, 
@@ -7,10 +7,8 @@ import {
   Activity,
   Calendar,
   Target,
-  Trophy,
   Settings,
   CheckCircle,
-  XCircle
 } from 'lucide-react'
 
 interface AdminStats {
